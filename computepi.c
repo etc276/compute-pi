@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <immintrin.h>
 #include <omp.h>
+#include <math.h>
+
 #include "computepi.h"
 
 double compute_pi_baseline(size_t N)

@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <math.h>
+
 #include "computepi.h"
 
 int main(int argc, char const *argv[])
