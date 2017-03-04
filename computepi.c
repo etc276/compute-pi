@@ -119,3 +119,15 @@ double compute_pi_avx_unroll(size_t N)
           tmp4[0] + tmp4[1] + tmp4[2] + tmp4[3];
     return pi * 4.0;
 }
+
+double compute_pi_leibniz(size_t N)
+{
+    double pi = 0.0;
+    int tmp = 1;
+    for (size_t i =0; i < N; i++) {
+        pi += tmp / (2.0 * (double)i + 1.0);
+        tmp *= (-1);
+    }
+    pi *= 4;
+    return pi;
+}
